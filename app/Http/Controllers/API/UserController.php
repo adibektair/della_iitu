@@ -19,7 +19,7 @@ class UserController extends Controller
      */ 
     public function register(Request $request) 
     { 
-        // dd($request);
+        dd($request);
         $validator = Validator::make($request->all(), [ 
             'first_name' => 'required',
             'last_name' => 'required',
